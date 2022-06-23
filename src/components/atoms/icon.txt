@@ -1,0 +1,72 @@
+import { FaHome } from 'react-icons/fa';
+
+
+// ** 
+Navigation
+// **
+
+// Home
+FaHome
+
+// About
+FaUserAstronaut
+
+// Portfolio
+FaFolder
+FaLayerGroup
+
+// Tech Stack
+FaCubes
+
+// Contact
+FaEnvelope
+FaMobileAlt
+
+// ** 
+Functional
+// **
+
+FaAngleDown
+FaAngleUp
+
+FaChevronDown
+FaChevronUp
+
+FaBars
+
+// ** 
+Social
+// **
+
+FaSpotify
+FaGithub
+FaLinkedin
+
+// ** 
+Tech
+// **
+
+FaWordpress
+FaSquarespace
+FaJsSquare
+FaNodeJs
+FaReact
+FaSass
+FaShopify
+FaFigma
+FaSketch
+
+// **
+Misc
+// **
+
+FaChessKnight
+FaChess
+FaFutbol
+FaCompass
+FaExclamationCircle
+FaInfoCircle
+FaRocket
+FaTags
+
+
