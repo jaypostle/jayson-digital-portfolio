@@ -1,5 +1,16 @@
+import SocialIcons from "./atoms/SocialIcons";
+
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <footer>
+      <SocialIcons />
+      <p>© Jayson Postle Digital 2022</p>
+      <nav>
+        <ul>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </nav>
+
+    </footer>
   )
 }

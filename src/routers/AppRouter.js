@@ -1,3 +1,6 @@
+import '../styles/style.scss';
+
+
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
 
@@ -8,6 +11,7 @@ import PageContact from '../Pages/PageContact';
 import PageAbout from '../Pages/PageAbout';
 import PagePortfolio from '../Pages/PagePortfolio';
 import PageTechStack from '../Pages/PageTechStack';
+import PagePrivacyPolicy from '../Pages/PagePrivacyPolicy';
 
 import PageTestimonials from '../Pages/PageTestimonials';
 
@@ -34,6 +38,8 @@ function AppRouter() {
             <Route path='/techstack' element={<PageTechStack />}/>
             <Route path='/contact' element={<PageContact />}/>
             <Route path='/testimonials' element={<PageTestimonials />}/>
+            <Route path='/privacy-policy' element={<PagePrivacyPolicy />}/>
+
 
           </Routes>
         </main>
