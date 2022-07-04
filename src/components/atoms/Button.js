@@ -1,7 +1,7 @@
-function Button() {
+function Button({text}) {
   return (
     <div>
-        <button>Button goes here</button>
+        <button>{text}</button>
     </div>
   )
 }

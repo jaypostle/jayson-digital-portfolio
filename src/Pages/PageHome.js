@@ -1,5 +1,6 @@
 import Button from '../components/atoms/Button';
 import mountains from '../assets/images/mountains.png';
+import portfolioData from '../assets/data/portfolioData';
 
 function PageHome() {
   return (
@@ -9,7 +10,7 @@ function PageHome() {
         <h1>Hello! I'm Jayson.</h1>
         <h4>I am a UX Engineer (UX Design + Front-End Development) striving to get 1% better everyday! </h4>
         <p>With backgrounds in behavioural economics and psychology, digital marketing, and entrepreneurship, I build complex websites and front-end applications that are detailed and exceptionally usable.</p>
-        <Button />
+        <a href="/portfolio">View My Work</a>
         <img src={mountains} alt="moutains" />
       </section>
 
@@ -31,27 +32,34 @@ function PageHome() {
       {/* Highlight Work */}
       <section className="home-highlight-work">
         <article>
+          <h2>Highlight Work</h2>
           <p>I love soccer, muay thai, spikeball, oil painting, nerding out over history.</p>
           <a href="/portfolio">See All Work</a>
         </article>
         <section className='highlight-work-wrapper'>
-          <article>
-            <section>
-              <h3>Moveo Movie Database</h3>
-              <p>I love soccer, muay thai, spikeball, oil painting, nerding out over history.</p>
-              <footer>
-                <span>React.js</span> 
-                <span>Node.js</span>
-                <span>WordPress</span>
-              </footer>
-              <a href="/portfolio">View Portfolio Piece</a>
-            </section>
-            <img src={mountains} alt="moutains" />
-          </article>
+          {
+            
+            
+            portfolioData && portfolioData.map((project) => 
+                <article key={project.id}>
+                  <section>
+                    <h3>{project.title}</h3>
+                    <p>{project.subtitle}</p>
+                    <footer>
+                      {
+                        project.techUsed.map((tech) => <span>{tech}</span> )
+                      }
+                     </footer>
+                    <a href="/portfolio">View Portfolio Piece</a>
+                  </section>
+                  <img src={mountains} alt="mountains" />
+                </article>
+            )
+          }
+          
          
 
-          <article>Article 2</article>
-          <article> Article 3</article>
+        
         </section>
       </section>
 
