@@ -2,7 +2,7 @@ import SocialIcons from "./atoms/SocialIcons";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <SocialIcons />
       <p>© Jayson Postle Digital 2022</p>
       <nav>

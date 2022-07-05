@@ -16,9 +16,6 @@ import PagePrivacyPolicy from '../Pages/PagePrivacyPolicy';
 
 import PageTestimonials from '../Pages/PageTestimonials';
 
-
-import '../App.css';
-
 function AppRouter() {
 
   useEffect(() => {
@@ -28,9 +25,9 @@ function AppRouter() {
   return (
     <BrowserRouter >
       <div className='wrapper'>
-        <header className="App-header">
+        <div className="App-header">
           <Header />
-        </header>
+        </div>
         <main>
           <Routes>
             <Route path='/' element={<PageHome />}/>

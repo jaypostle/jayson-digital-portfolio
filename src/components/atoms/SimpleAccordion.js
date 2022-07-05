@@ -21,14 +21,14 @@ export default function SimpleAccordion({funFact, header, data, children}) {
   
 
   return (
-    <div>
+    <div className='accordion-wrapper'>
       <Accordion key={title}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>{title}</Typography>
+          <Typography className="title">{title}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

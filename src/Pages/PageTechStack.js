@@ -17,29 +17,24 @@ function PageTechStack() {
     <article>
         <h2>Engineering</h2>
         <p>Websites and web apps built in React and Wordpress. </p>
-        <ul>
+        
         {       
-        techStackData && techStackData.engineering.map((skill) =>  <li>{skill.skill}</li>)
+        techStackData && techStackData.engineering.map((skill) =>  <span className='pill'>{skill.skill}</span>)
         }        
-        </ul>
       </article>
       <article>
         <h2>Design</h2>
         <p>Websites and web apps built in React and Wordpress. </p>
-        <ul>
         {       
-        techStackData && techStackData.design.map((skill) =>  <li>{skill.skill}</li>)
+        techStackData && techStackData.design.map((skill) =>  <span className='pill'>{skill.skill}</span>)
         }        
-        </ul>
       </article>
       <article>
         <h2>General</h2>
         <p>Websites and web apps built in React and Wordpress. </p>
-        <ul>
         {       
-        techStackData && techStackData.general.map((skill) =>  <li>{skill.skill}</li>)
+        techStackData && techStackData.general.map((skill) =>  <span className='pill'>{skill.skill}</span>)
         }        
-        </ul>
       </article>
     </section>
     </>

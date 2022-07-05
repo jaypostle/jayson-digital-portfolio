@@ -1,15 +1,19 @@
 import Navigation from './Navigation.js';
 import SocialIcons from './atoms/SocialIcons';
+import jayson from '../assets/images/jayson.png';
 
 
 function Header() {
   return (
 
    <header>
-    <h1>Jayson Logo</h1>
+    
+      <img src={jayson} alt="jayson-logo" />
+      <h4>{document.title}</h4>
+    
+
     <Navigation />
     <SocialIcons />
-    {document.title}
    </header>
   )
 }

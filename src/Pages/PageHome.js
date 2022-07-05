@@ -1,21 +1,28 @@
 import Button from '../components/atoms/Button';
 import mountains from '../assets/images/mountains.png';
+import jaysonphotomain from '../assets/images/jaysonphotomain.png';
+import jaysonphotomainhighres2 from '../assets/images/jaysonphotomainhighres2.jpeg';
+
 import portfolioData from '../assets/data/portfolioData';
 import useDocumentTitle from '../utilities/documentTitle';
+import Accordion from '../components/atoms/SimpleAccordion';
+import techStackData from '../assets/data/techStack';
+
+
 
 
 function PageHome() {
   useDocumentTitle('Home')
 
   return (
-    <div>
+    <>
       {/* HERO */}
       <section className='home-hero-section'>
-        <h1>Hello! I'm Jayson.</h1>
+        <h1>Hello! I'm Ja<span className='gold'>y</span>son.</h1>
         <h4>I am a UX Engineer (UX Design + Front-End Development) striving to get 1% better everyday! </h4>
         <p>With backgrounds in behavioural economics and psychology, digital marketing, and entrepreneurship, I build complex websites and front-end applications that are detailed and exceptionally usable.</p>
-        <a href="/portfolio">View My Work</a>
-        <img src={mountains} alt="moutains" />
+        <a href="/portfolio" className='secondary-cta'>View My Work</a>
+        <img src={jaysonphotomainhighres2} alt="Jayson Photo" />
       </section>
 
       {/* ABOUT ME */}
@@ -26,11 +33,30 @@ function PageHome() {
           <p>In my free time, you’ll probably find me cooking some new dish, getting lost in a good book or podcast, or reviewing my goals for the year. </p>
           <p>My background prior to Design and Development is in ecommerce and service digital marketing, running my own wedding DJ business.</p>
         </article>
-        <div className="accordion-wrapper">
-          <div>Tools & Tech Stack</div>
-          <div>Passion Projects</div>
+        <div className="accordion-wrapper-main">
+          <Accordion header={'Tools & Tech Stack'} data={''}>      
+            <h4>Front-End Developer with UX and Marketing Experience </h4>
+            <p>Websites and web apps built in React and Wordpress. </p>
+           
+            {       
+            techStackData && techStackData.engineering.map((skill) =>  <span className='pill'>{skill.skill}</span>)
+            } 
+            {       
+        techStackData && techStackData.design.map((skill) =>  <span className='pill'>{skill.skill}</span>)
+            }      
+            {       
+            techStackData && techStackData.general.map((skill) =>  <span className='pill'>{skill.skill}</span>)
+            }     
+          </Accordion>
+          <Accordion header={'Passion Projects'} data={''}>
+            <h4>UX Designer Bookclub</h4>
+            <p>I recently started a bookclub inside the <a className="text-link" href="https://www.designerslack.community/community/vancouver-design-check-in"  target="_blank" rel="noopener noreferrer">Vancouver Design Check-in</a> Slack community with my friend, Marisa Chan. We just completed Think Again by Adam Grant and are selecting our next book!</p>
+            <h4>Impact 2022</h4>
+            <strong>Reflecting on 2021 and setting actionable goals for 2022.</strong>
+            <p>I created a goals and reflection worksheet to help set actionable goals for the year and learn lessons from the past. Originally, I made it for myself and my friend but I ended up publishing it <a className="text-link" href="https://jaysonpostle.com/impact-2022"  target="_blank" rel="noopener noreferrer">here</a> and shared it with my local community.</p>
+          </Accordion>
         </div>
-        <a href="/about">Learn More About Me</a>
+        <a href="/about" className='secondary-cta'>Learn More About Me</a>
       </section>
 
       {/* Highlight Work */}
@@ -38,7 +64,7 @@ function PageHome() {
         <article>
           <h2>Highlight Work</h2>
           <p>I love soccer, muay thai, spikeball, oil painting, nerding out over history.</p>
-          <a href="/portfolio">See All Work</a>
+          <a href="/portfolio" className='secondary-cta'>See All Work</a>
         </article>
         <section className='highlight-work-wrapper'>
           {
@@ -51,10 +77,10 @@ function PageHome() {
                     <p>{project.subtitle}</p>
                     <footer>
                       {
-                        project.techUsed.map((tech) => <span>{tech}</span> )
+                        project.techUsed.map((tech) => <span className='pill'>{tech}</span> )
                       }
                      </footer>
-                    <a href="/portfolio">View Portfolio Piece</a>
+                    <a href="/portfolio" className='secondary-cta'>View Portfolio Piece</a>
                   </section>
                   <img src={mountains} alt="mountains" />
                 </article>
@@ -70,24 +96,26 @@ function PageHome() {
       {/* Testimonial */}
       <section className="home-testimonial">
         <figure class="quote">
+          <span className='testimonial-quotations quotations-left'>“</span>
           <blockquote>
           I’ve known Jayson since March 2012. He’s worked for me as an event designer and marketer with notable events such as Diner en Blanc (6 years), Bayview Gala, and Our Place Hungry Hearts. In that time, I know him to be a self-starter, receptive to feedback, a creative problem solver, and highly motivated.
           </blockquote>
           <figcaption>
-            &mdash; Aidan Henry, <cite>Brink Events</cite>
+            &mdash; <strong>Aidan Henry</strong> | <cite>Brink Events</cite>
           </figcaption>
+          <span className='testimonial-quotations quotations-right'>“</span>
         </figure>
-        <a href="/testimonials">View More Testimonials</a>
+        <a href="/testimonials" className='secondary-cta'>View More Testimonials</a>
       </section>
 
       {/* Let's Chat */}
       <section className="home-contact">
         <h2>Curious? Let's Talk</h2>
         <p>I’m always curious about new conversations and opportunities. I’m just as excited to talk marketing & design as I am sports, hiking, and good food!</p>
-        <a href="/contact">Get in touch</a>
+        <a href="/contact" className='primary-cta'>Get in touch</a>
 
       </section>
-    </div>
+      </>
   )
 }
 export default PageHome
