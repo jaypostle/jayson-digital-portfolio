@@ -1,4 +1,6 @@
 import mountains from '../assets/images/mountains.png';
+import jaysonphoto2 from '../assets/images/jaysonphoto2.jpeg';
+
 import funFactData from '../assets/data/funFactData';
 import Accordion from '../components/atoms/SimpleAccordion';
 import useDocumentTitle from '../utilities/documentTitle';
@@ -15,7 +17,7 @@ function PageAbout() {
           <h1>Jayson Postle</h1>
           <h3>Full-Stack Designer & Marketer | The Digital Problem Solver</h3>
         </article>
-        <img src={mountains} alt="mountains" />
+        <img className="about-photo-jayson" src={jaysonphoto2} alt="Photo of Jayson" />
       </article>
     </section>
     <section>

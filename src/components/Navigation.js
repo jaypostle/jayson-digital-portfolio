@@ -9,22 +9,27 @@ import { FaMobileAlt } from 'react-icons/fa';
 
 function Navigation() {
   return (
-        <nav>
+        <nav className='primary-nav'>
             <ul>
                 <li>
-                    <FaHome /><NavLink to='/'>Home</NavLink>
+                    <span className='gold-nav-hover-span'>hello</span>
+                    <NavLink to='/'><FaHome />Home</NavLink>
                 </li>
                 <li>
-                    <FaUserAstronaut /><NavLink to='/portfolio'>Portfolio</NavLink>
+                    <span className='gold-nav-hover-span'>hello</span>
+                    <NavLink to='/portfolio'><FaUserAstronaut />Portfolio</NavLink>
                 </li>
                 <li>
-                    <FaLayerGroup /><NavLink to='/about'>About</NavLink>
+                    <span className='gold-nav-hover-span'>hello</span>
+                    <NavLink to='/about'><FaLayerGroup />About</NavLink>
                 </li>
                 <li>
-                    <FaCubes /><NavLink to='/techstack'>Tech Stack</NavLink>
+                    <span className='gold-nav-hover-span'>hello</span>
+                    <NavLink to='/techstack'><FaCubes />Tech Stack</NavLink>
                 </li>
                 <li>
-                    <FaMobileAlt /><NavLink to='/contact'>Contact</NavLink>
+                    <span className='gold-nav-hover-span'>hello</span>
+                    <NavLink to='/contact'><FaMobileAlt />Contact</NavLink>
                 </li>
             </ul>
         </nav>
