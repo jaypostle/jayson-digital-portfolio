@@ -1,7 +1,12 @@
 // import mountains from '../assets/images/mountains.png';
 import portfolioData from '../assets/data/portfolioData';
+import { Link } from 'react-router-dom';
+import useDocumentTitle from '../utilities/documentTitle';
+
 
 function PagePortfolio() {
+  useDocumentTitle('Portfolio')
+
   return (
     <>
       <section>
@@ -25,10 +30,11 @@ function PagePortfolio() {
                     <p>{project.subtitle}</p>
                     <footer>
                       {
-                        project.techUsed.map((tech) => <span>{tech}</span> )
+                        project.techUsed.map((tech) => <span key={tech}>{tech}</span> )
                       }
                      </footer>
                     <a href="/portfolio">View Portfolio Piece</a>
+                    <Link to={`/portfolio/${project.title.toLowerCase().split(" ").join("-")}`}>More Info {'>'}</Link>
                   </section>
                   {/* <img src={mountains} alt="mountains" /> */}
                 </article>

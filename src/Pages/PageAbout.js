@@ -1,8 +1,12 @@
 import mountains from '../assets/images/mountains.png';
 import funFactData from '../assets/data/funFactData';
 import Accordion from '../components/atoms/SimpleAccordion';
+import useDocumentTitle from '../utilities/documentTitle';
 
 function PageAbout() {
+  useDocumentTitle('About')
+
+
   return (
     <>
     <section>
@@ -28,7 +32,7 @@ Since my second year of university, I have run the premier high-end wedding DJ c
     </section>
     <section>
       {
-        funFactData && funFactData.map((fact) =>  <Accordion funFact={fact}/>)
+        funFactData && funFactData.map((fact) =>  <Accordion key={fact} funFact={fact}/>)
       }
     </section>
     </>

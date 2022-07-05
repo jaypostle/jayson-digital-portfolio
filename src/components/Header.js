@@ -9,6 +9,7 @@ function Header() {
     <h1>Jayson Logo</h1>
     <Navigation />
     <SocialIcons />
+    {document.title}
    </header>
   )
 }

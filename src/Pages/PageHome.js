@@ -1,8 +1,12 @@
 import Button from '../components/atoms/Button';
 import mountains from '../assets/images/mountains.png';
 import portfolioData from '../assets/data/portfolioData';
+import useDocumentTitle from '../utilities/documentTitle';
+
 
 function PageHome() {
+  useDocumentTitle('Home')
+
   return (
     <div>
       {/* HERO */}
