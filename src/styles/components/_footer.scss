@@ -1,0 +1,49 @@
+footer.footer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin-bottom: 6rem;
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: $light-grey-buttons;
+        border-radius: 2.5%;
+        padding: 1rem;
+        margin: 2rem;
+        pointer-events: none;
+        
+        // &:hover {
+        //     background: $ocean-blue;
+        // }   
+
+
+        svg {
+            font-size: 2rem;
+            margin: 0rem 0.5rem;
+            pointer-events: auto;
+
+            &:hover {
+                color: $ocean-blue;
+                // background-color: $black;
+                // border-radius: 50%;
+            }
+        }
+    }
+
+   
+
+
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+        // margin: 0.5rem;
+    }
+
+    a {
+        font-size: 0.75rem;
+    }
+}

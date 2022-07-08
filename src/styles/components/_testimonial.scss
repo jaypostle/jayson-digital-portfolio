@@ -1,0 +1,43 @@
+//  Testimonial Block
+.home-testimonial {
+    margin: 4rem;
+figure.quote {
+    position: relative;
+    margin: 0rem;
+
+    blockquote {
+        font-family: 'Barlow', 'Sarabun', sans-serif;
+        margin: 1rem 0rem;
+    }
+    
+    figcaption {
+        font-family: 'Corben', 'Barlow', 'Roboto', sans-serif;
+        margin: 1rem 0;
+
+        cite {
+            font-style: normal;
+        }
+    }
+
+    .testimonial-quotations {
+        // background-color: #f1c948;
+        // border-radius: 1.5rem;
+        font-family: 'Corben', 'Barlow', 'Roboto', sans-serif;
+        font-size: 7rem;
+        font-weight: 400;
+        position: absolute;
+        color:rgba($textColor-midnight-blue, 60%)
+        
+        // z-index: 902;
+    }
+    .quotations-left {
+        left: -15%;
+        top: -40%;
+    }
+    .quotations-right {
+        right: -6%;
+        bottom: -20%;
+        transform: rotate(180deg)
+    }
+}
+}
