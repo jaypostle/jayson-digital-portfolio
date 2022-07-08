@@ -1,4 +1,4 @@
-import mountains from '../assets/images/mountains.png';
+// import mountains from '../assets/images/mountains.png';
 import jaysonphoto2 from '../assets/images/jaysonphoto2.jpeg';
 
 import funFactData from '../assets/data/funFactData';
@@ -34,7 +34,7 @@ Since my second year of university, I have run the premier high-end wedding DJ c
     </section>
     <section>
       {
-        funFactData && funFactData.map((fact) =>  <Accordion key={fact} funFact={fact}/>)
+        funFactData && funFactData.map((fact) =>  <Accordion key={fact.id} funFact={fact}/>)
       }
     </section>
     </>

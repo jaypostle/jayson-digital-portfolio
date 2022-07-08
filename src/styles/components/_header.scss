@@ -1,3 +1,10 @@
+.App-header {
+    @include mq($desktop) {
+    position: static;
+    background-color: $textColor-midnight-blue;
+    }
+}
+
 header {
     background-color: $textColor-midnight-blue;
     min-height: 10vh;
@@ -11,6 +18,16 @@ header {
     img, h4 {
         padding: 0 2rem;
         color: white;
+    }
+
+    @include mq($desktop) {
+        grid-template-columns: 1fr;
+        h4 {
+            // display: none;
+        }
+        // min-height: 100vh;
+        
+
     }
 
 
@@ -28,6 +45,10 @@ header {
         background-color: $textColor-midnight-blue;
         color: white!important;
         z-index: 100;
+
+        @include mq($desktop) {
+            position: relative;
+        }
         
         
         ul {
@@ -37,6 +58,13 @@ header {
             grid-template-columns: repeat(5, 1fr);
             // justify-content: center;
             // gap: 0.5rem;
+
+            @include mq($desktop) {
+                grid-template-columns: 1fr;
+                justify-content: left;
+                text-align: left;
+
+            }
         }
 
         li {
@@ -80,7 +108,7 @@ header {
 
             a {
                 color: $mid-grey-nav;
-                font-size: 1rem;
+                font-size: 0.75rem;
                 font-weight: 700;
                 padding: 0px;
                 display: flex;
@@ -88,6 +116,12 @@ header {
                 justify-content: center;
                 align-items: center;
                 align-content: center;
+
+                @include mq($tablet) {
+                    font-size: 1.125rem;
+                }
+
+                
 
                 &:hover {
                     border: none;
@@ -108,8 +142,20 @@ header {
     .social-icons-wrapper {
         display: none;
 
-        @include mq($desktop){
-            display: block;
+        @include mq($desktop) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 1rem;
+
+            svg {
+                color: white;
+                margin: 0.5rem auto;
+                font-size: 2.25rem;
+            }
         }
+
     }
 }
+

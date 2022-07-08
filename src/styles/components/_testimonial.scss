@@ -1,6 +1,16 @@
 //  Testimonial Block
 .home-testimonial {
-    margin: 4rem;
+    margin: 4rem 1rem;
+
+    @include mq($desktop) {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    @include mq($desktopWide) {
+        max-width: 50%;
+        margin: 0 auto;
+    }
 figure.quote {
     position: relative;
     margin: 0rem;
@@ -30,14 +40,37 @@ figure.quote {
         
         // z-index: 902;
     }
+
     .quotations-left {
         left: -15%;
-        top: -40%;
+        top: -25%;
+    
+         @include mq($tablet) {
+            left: -7.5%;
+            top: -50%;
+    }
+    
+    @include mq($desktop) {
+        left: -7.5%;
+        top: -50%;
+    }
+       
     }
     .quotations-right {
-        right: -6%;
-        bottom: -20%;
-        transform: rotate(180deg)
+        right: -15%;
+        bottom: -15%;
+        transform: rotate(180deg);
+    
+        @include mq($tablet) {
+            right: -5%;
+            bottom: -15%;
     }
+
+       
+    }
+    
+    
 }
+
 }
+

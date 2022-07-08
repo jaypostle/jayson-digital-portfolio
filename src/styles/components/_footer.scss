@@ -1,11 +1,12 @@
 footer.footer {
-    margin-top: 2rem;
+    background-color: $light-grey-background;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-items: center;
-    margin-bottom: 6rem;
+    padding-bottom: 7rem;
 
     article {
         display: grid;

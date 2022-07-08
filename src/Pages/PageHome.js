@@ -21,7 +21,7 @@ function PageHome() {
         <h1>Hello! I'm Ja<span className='gold'>y</span>son.</h1>
         <h4>I am a UX Engineer (UX Design + Front-End Development) striving to get 1% better everyday! </h4>
         <p>With backgrounds in behavioural economics and psychology, digital marketing, and entrepreneurship, I build complex websites and front-end applications that are detailed and exceptionally usable.</p>
-        <a href="/portfolio" className='secondary-cta'>View My Work</a>
+        <a href="/portfolio" className='primary-cta'>View My Work</a>
         <img src={jaysonphotomainhighres2} alt="Jayson Photo" />
       </section>
 

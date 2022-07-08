@@ -45,6 +45,8 @@ a {
     padding: 0.75rem 0rem;
     text-decoration: none;
     // margin-bottom: 2rem;
+    -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     
 }

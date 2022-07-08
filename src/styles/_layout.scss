@@ -1,0 +1,22 @@
+.wrapper {
+
+    @include mq($desktop) {
+        display: grid;
+        // grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: 30% 70%;
+
+        .App-header    {
+            grid-area: header;
+        }
+        main    {
+            grid-area: main;
+        }
+        footer    {
+            grid-area: footer;
+        }
+        grid-template-areas: 
+        "header main"
+        "footer footer";
+    }
+   
+}
