@@ -1,0 +1,53 @@
+// Type
+
+body {
+    font-family: 'Outfit', 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: $textColor-midnight-blue;
+    font-size: 1.125rem;
+}
+
+h1, h2, h3, nav a {
+    font-family: 'Barlow', 'Sarabun', sans-serif;
+}
+
+h2 {
+    font-size: 2.625rem;
+    font-weight: 500;
+    margin: 0.5rem 0rem;
+}
+
+h1 {
+    font-weight: 400;
+    font-family: 'Corben', 'Barlow', 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    color: $textColor-midnight-blue;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: rgba($textColor-midnight-blue, 70%);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: $textColor-midnight-blue;
+    font-family: 'Barlow', 'Sarabun', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.75rem 0rem;
+    text-decoration: none;
+    // margin-bottom: 2rem;
+
+    
+}
+
+
+

@@ -1,0 +1,26 @@
+// Wrapper
+.wrapper {
+    margin: 0 auto;
+    
+    // border-radius: 10px;
+    // background-color: $magenta-midnight-background;
+
+    @include mq($desktopWide){
+        // margin: em(8) auto;
+        // border: 3px solid $textColor;
+    }
+
+    
+
+}
+
+body {
+    main {
+       padding: 1rem 2rem;
+       background-color: $light-grey-background;
+
+       section {
+        margin: 4rem 0;
+       }
+   }
+}

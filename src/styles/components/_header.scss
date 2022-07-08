@@ -1,0 +1,115 @@
+header {
+    background-color: $textColor-midnight-blue;
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: right;
+
+    img, h4 {
+        padding: 0 2rem;
+        color: white;
+    }
+
+
+    img {
+        width: 12rem;
+        height: auto;
+    }
+
+    //  NAVIGATION
+    .primary-nav {
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: $textColor-midnight-blue;
+        color: white!important;
+        z-index: 100;
+        
+        
+        ul {
+            padding: 0rem;
+            margin: 0rem;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            // justify-content: center;
+            // gap: 0.5rem;
+        }
+
+        li {
+            display: inline-block;
+            // border-top: 3px $textColor-midnight-blue solid;
+            position: relative;
+            padding: 1.25rem 0rem 1rem;
+            color: $mid-grey-nav;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            
+
+            .gold-nav-hover-span {
+                width: 60%;
+                background-color: $gold-CTA;
+                color: $gold-CTA;
+                font-size: 0.25rem;
+                border-radius: 1rem;
+                position: absolute;
+                top: -2.5%;
+                display: none;
+            }
+
+            &:hover, &:active {
+                background-color: rgba($gold-CTA, 40%);
+                // border-top: 3px $gold-CTA solid;
+                
+                a, svg {
+                    color: white;
+                }
+
+                .gold-nav-hover-span {
+                    display: block;
+                }
+            }
+
+            a {
+                color: $mid-grey-nav;
+                font-size: 1rem;
+                font-weight: 700;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+
+                &:hover {
+                    border: none;
+                }
+                &:active {
+                    color: $gold-CTA;
+                }
+            }
+
+            svg {
+                padding-bottom: 0.5rem;
+                font-size: 2.25rem;
+            }
+        }
+    }
+
+    //  SOCIAL ICONS
+    .social-icons-wrapper {
+        display: none;
+
+        @include mq($desktop){
+            display: block;
+        }
+    }
+}
