@@ -80,6 +80,8 @@ header {
             align-content: center;
             -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
             transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+           
             
 
             .gold-nav-hover-span {
@@ -116,6 +118,8 @@ header {
                 justify-content: center;
                 align-items: center;
                 align-content: center;
+
+               
 
                 @include mq($tablet) {
                     font-size: 1.125rem;
