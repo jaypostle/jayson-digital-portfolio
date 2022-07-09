@@ -1,4 +1,5 @@
 import '../styles/style.scss';
+import portfolioData from '../assets/data/portfolioData';
 
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
@@ -32,7 +33,13 @@ function AppRouter() {
           <Routes>
             <Route path='/' element={<PageHome />}/>
             <Route path='/portfolio' element={<PagePortfolio />}/>
-            <Route path='/portfolio/:id' element={<PageSinglePortfolio />}/>
+            {/* <Route path='/portfolio/:id' element={<PageSinglePortfolio />}/> */}
+
+            {portfolioData && portfolioData.map((project) => 
+              <Route path={`/portfolio/${project.title.toLowerCase().split(" ").join("-")}`} element={<PageSinglePortfolio />}/>
+
+            )
+            }
 
             <Route path='/about' element={<PageAbout />}/>
             <Route path='/techstack' element={<PageTechStack />}/>

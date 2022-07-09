@@ -7,7 +7,7 @@
 
 header {
     background-color: $textColor-midnight-blue;
-    min-height: 10vh;
+    // min-height: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -60,6 +60,7 @@ header {
             // gap: 0.5rem;
 
             @include mq($desktop) {
+                display: block;
                 grid-template-columns: 1fr;
                 justify-content: left;
                 text-align: left;
@@ -81,7 +82,11 @@ header {
             -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
             transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-           
+            @include mq($desktop) {
+                justify-content: left;
+                flex-direction: row;
+
+            }
             
 
             .gold-nav-hover-span {
@@ -93,6 +98,15 @@ header {
                 position: absolute;
                 top: -2.5%;
                 display: none;
+
+                @include mq($desktop) {
+                    right: -1.5%;
+                    top: 15%;
+                    bottom: 15%;
+                    width: 0.5rem;
+                    height: 66%;
+
+                }
             }
 
             &:hover, &:active {
@@ -119,12 +133,20 @@ header {
                 align-items: center;
                 align-content: center;
 
-               
-
                 @include mq($tablet) {
                     font-size: 1.125rem;
                 }
 
+                @include mq($desktop) {
+                    justify-content: left;
+                    flex-direction: row;
+                    padding-left: 2rem;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: $light-grey-buttons;
+                }
+
+            
                 
 
                 &:hover {
@@ -138,6 +160,11 @@ header {
             svg {
                 padding-bottom: 0.5rem;
                 font-size: 2.25rem;
+
+                @include mq($desktop) {
+                    margin-right: 1.25rem;
+                    padding-bottom: 0rem;
+                }
             }
         }
     }
@@ -148,15 +175,21 @@ header {
 
         @include mq($desktop) {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
             align-content: center;
             gap: 1rem;
+            padding-left: 2.5rem;
+            margin-top: 6rem;
 
             svg {
-                color: white;
+                color: $mid-grey-nav;
                 margin: 0.5rem auto;
-                font-size: 2.25rem;
+                font-size: 2rem;
+
+                &:hover {
+                    color: $ocean-blue;
+                }
             }
         }
 

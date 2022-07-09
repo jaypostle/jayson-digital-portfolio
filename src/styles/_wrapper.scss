@@ -16,11 +16,19 @@
 
 body {
     main {
-       padding: 1rem 2rem;
+       padding: 1rem 1rem;
        background-color: $light-grey-background;
 
+       @include mq($tablet){
+        padding: 1rem 2rem;
+       }
+
        section {
-        margin: 4rem 0;
+        margin: 2rem 0;
+
+        @include mq($tablet){
+            margin: 4rem 0;
+        }
        }
    }
 }

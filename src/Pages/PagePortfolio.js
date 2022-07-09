@@ -14,28 +14,29 @@ function PagePortfolio() {
         <h4>Here are my great portfolio pieces.</h4>
       </section>
       <section>
-        <nav>
+        <nav className='portfolio-filter-nav'>
           <ul>
-            <li>All Projects</li>
-            <li>All Development</li>
-            <li>All Design</li>
+            <li><span className='pill'>All Projects</span></li>
+            <li><span className='pill'>All Development</span></li>
+            <li><span className='pill'>All Design</span></li>
           </ul>
         </nav>
         <section className='projects-wrapper'>
           {
             portfolioData && portfolioData.map((project) => 
-                <article key={project.id}>
-                  <section>
+                <article key={project.id} className="project-card">
+                  <div className='project-content-wrapper'>
                     <h3>{project.title}</h3>
                     <p>{project.subtitle}</p>
-                    <footer>
+                    <article className='tech-pill-wrapper'>
                       {
                         project.techUsed.map((tech) => <span key={tech}>{tech}</span> )
                       }
-                     </footer>
-                    <a href="/portfolio">View Portfolio Piece</a>
-                    <Link to={`/portfolio/${project.title.toLowerCase().split(" ").join("-")}`}>More Info {'>'}</Link>
-                  </section>
+                     </article>
+                  </div>
+                    {/* <a href="/portfolio">View Portfolio Piece</a> */}
+                    <Link to={`/portfolio/${project.title.toLowerCase().split(" ").join("-")}`}>View Project {'>'}</Link>
+                  
                   {/* <img src={mountains} alt="mountains" /> */}
                 </article>
             )
