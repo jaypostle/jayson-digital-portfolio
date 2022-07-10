@@ -11,7 +11,7 @@ function PagePortfolio() {
     <>
       <section>
         <h1>Portfolio</h1>
-        <h4>Here are my great portfolio pieces.</h4>
+        <h4>View below my front-end development projects using React.js, vanilla JS, HTML/CSS, and SASS.</h4>
       </section>
       <section>
         <nav className='portfolio-filter-nav'>
@@ -30,7 +30,7 @@ function PagePortfolio() {
                     <p>{project.subtitle}</p>
                     <article className='tech-pill-wrapper'>
                       {
-                        project.techUsed.map((tech) => <span key={tech}>{tech}</span> )
+                        project.techUsed.map((tech) => <span className='pill' key={tech}>{tech}</span> )
                       }
                      </article>
                   </div>

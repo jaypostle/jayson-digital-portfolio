@@ -1,7 +1,15 @@
 .App-header {
     @include mq($desktop) {
-    position: static;
+    // position: static;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+
     background-color: $textColor-midnight-blue;
+    z-index: 1;
+    width: 30%;
+    height: 100vh;
     }
 }
 
@@ -17,6 +25,10 @@ header {
 
     .logo-wrapper {
         display: flex;
+
+        @include mq($desktop) {
+            margin-top: 4rem;
+    }
     }
 
     img, h4 {

@@ -35,9 +35,7 @@ const techStackData = {
     {
         skill: 'Invision'
     },
-    ],
-    general: 
-    [{
+    {
         skill: 'UX/UI'
     },
     {
@@ -51,6 +49,29 @@ const techStackData = {
     },
     {
         skill: 'Usability Testing'
+    },
+    ],
+    marketing: 
+    [{
+        skill: 'Google Ads (Search, Display, Youtube, Shopping)'
+    },
+    {
+        skill: 'Facebook & Instagram Advertising'
+    },
+    {
+        skill: 'Snapchat'
+    },
+    {
+        skill: 'Pinterest'
+    },
+    {
+        skill: 'Email Marketing'
+    },
+    {
+        skill: 'Marketing Research'
+    },
+    {
+        skill: 'Sales Funnel Strategy'
     },
     ],
 }
