@@ -51,7 +51,7 @@ function PageHome() {
         techStackData && techStackData.design.map((skill) =>  <span className='pill'>{skill.skill}</span>)
             }      
             {       
-            techStackData && techStackData.general.map((skill) =>  <span className='pill'>{skill.skill}</span>)
+            techStackData && techStackData.marketing.map((skill) =>  <span className='pill'>{skill.skill}</span>)
             }     
           </Accordion>
           <Accordion header={'Passion Projects'} data={''}>
