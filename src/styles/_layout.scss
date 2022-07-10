@@ -10,13 +10,18 @@
         }
         main    {
             grid-area: main;
+            min-height: 70vh;
         }
         footer    {
             grid-area: footer;
         }
         grid-template-areas: 
         "header main"
-        "footer footer";
+        "header footer";
     }
    
+}
+
+p, h3, h4 {
+    max-width: 40rem;
 }

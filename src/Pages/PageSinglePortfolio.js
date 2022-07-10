@@ -20,31 +20,31 @@ function PageSinglePortfolio() {
       <h2>Overview</h2>
       <p>I love soccer, muay thai, spikeball, oil painting, nerding out over history & nerding out over history.</p>
     </section>
-    <section>
+    <article>
     <Accordion header={'Project Goals'} data={'data'}>
       children go here
     </Accordion>
-    </section>
-    <section>
+    </article>
+    <article>
     <Accordion header={'Project Requirements'} data={'data'}>
       children go here
     </Accordion>
-    </section>
-    <section>
+    </article>
+    <article>
     <Accordion header={'Highlight Functionality'} data={'data'}>
       children go here
     </Accordion>
-    </section>
-    <section>
+    </article>
+    <article>
     <Accordion header={'Final Result'} data={'data'} >
       children go here
     </Accordion>
-    </section>
-    <section>
+    </article>
+    <article>
     <Accordion header={'What I Learned'} data={'data'}>
       children go here
     </Accordion>
-    </section>
+    </article>
     </>
   )
 }
