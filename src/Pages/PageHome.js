@@ -1,7 +1,11 @@
-import Button from '../components/atoms/Button';
-import mountains from '../assets/images/mountains.png';
-import jaysonphotomain from '../assets/images/jaysonphotomain.png';
+// import Button from '../components/atoms/Button';
+// import mountains from '../assets/images/mountains.png';
+// import jaysonphotomain from '../assets/images/jaysonphotomain.png';
+
 import jaysonphotomainhighres2 from '../assets/images/jaysonphotomainhighres2.jpeg';
+import moveoHomeProject from '../assets/images/Moveo/moveo-home-project.png';
+import vulcanHomeProject from '../assets/images/Vulcan/vulcan-home-project.png';
+import jsGameHomeProject from '../assets/images/JaysonSays/js-home-project.png';
 
 import portfolioData from '../assets/data/portfolioData';
 import useDocumentTitle from '../utilities/documentTitle';
@@ -20,8 +24,8 @@ function PageHome() {
       <section className='home-hero-section'>
         <div id="home-content-wrapper">
         <h1>Hello! I'm Ja<span className='gold'>y</span>son.</h1>
-        <h4>I am a UX Engineer (UX Design + Front-End Development) striving to get 1% better everyday! </h4>
-        <p>With backgrounds in behavioural economics and psychology, digital marketing, and entrepreneurship, I build complex websites and front-end applications that are detailed and exceptionally usable.</p>
+        <h4>I am a Front-end Web Developer striving to get 1% better everyday! </h4>
+        <p>With backgrounds in UX design, behavioural economics and psychology, digital marketing, and entrepreneurship, I build complex websites and front-end applications that are detailed and exceptionally usable.</p>
         <a href="/portfolio" className='primary-cta'>View My Work</a>
         </div>
         <img src={jaysonphotomainhighres2} alt="Jayson Photo" className='home-jayson-photo' />
@@ -74,7 +78,7 @@ function PageHome() {
             
             portfolioData && portfolioData.map((project) => 
                 <article key={project.id}>
-                  <section>
+                  <div className='home-project-content-wrapper project-card'>
                     <h3>{project.title}</h3>
                     <p>{project.subtitle}</p>
                     <footer>
@@ -83,8 +87,17 @@ function PageHome() {
                       }
                      </footer>
                     <a href="/portfolio" className='secondary-cta'>View Portfolio Piece</a>
-                  </section>
-                  <img src={mountains} alt="mountains" />
+                  </div>
+                  {/* allocate project photos */}
+                  {(project.id === 1) &&
+                  <img className="home-project-photo" src={moveoHomeProject} alt={project.title} />
+                  }
+                  {(project.id === 2) &&
+                  <img className="home-project-photo" src={vulcanHomeProject} alt={project.title} />
+                  }
+                  {(project.id === 3) &&
+                  <img className="home-project-photo" src={jsGameHomeProject} alt={project.title} />
+                  }
                 </article>
             )
           }
@@ -107,7 +120,7 @@ function PageHome() {
           </figcaption>
           <span className='testimonial-quotations quotations-right'>“</span>
         </figure>
-        <a href="/testimonials" className='secondary-cta'>View More Testimonials</a>
+        {/* <a href="/testimonials" className='secondary-cta'>View More Testimonials</a> */}
       </section>
 
       {/* Let's Chat */}

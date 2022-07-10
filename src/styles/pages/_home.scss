@@ -29,4 +29,56 @@
             justify-content: center;
         }
     }
+
+    
+}
+
+
+.highlight-work-wrapper {
+
+    article {
+        margin-bottom: 2rem;
+    }
+    .home-project-content-wrapper {
+        // border: 2px solid black;
+        border-radius: 0.25rem 0.25rem 0 0;
+
+        a {
+            margin-top: 1rem;
+        }
+
+       
+    }
+    // article section {
+    //     border: 2px solid black;
+    // }
+
+    .home-project-photo {
+        margin: 0px;
+        border-radius: 0 0 0.25rem 0.25rem;
+    }
+
+    // Desktop 1150px or greater changes
+    
+    @include mq(1150px){
+        .home-project-content-wrapper {
+            // border: 2px solid black;
+            border-radius: 0.25rem 0 0 0.25rem;
+        }
+
+        .home-project-photo {
+            border-radius: 0 0.25rem 0.25rem 0;
+        }
+            article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            img {
+                height: 100%;
+                // width: auto;
+                object-fit: cover;
+            }
+        }
+    }
+    
 }

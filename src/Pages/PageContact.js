@@ -8,9 +8,10 @@ function PageContact() {
     <>
     <section>
       <h1>Contact Me</h1>
-      <p></p>I’m always curious about new conversations and opportunities. I’m just as excited to talk marketing & design as I am sports, hiking, and good food! Tell me your favourite hiking or food experience!
-
-To get in touch with me, please email me at <strong>jaysondigitalmcc@gmail.com</strong>.
+      <p>I’m always curious about new conversations and opportunities. I’m just as excited to talk marketing & design as I am sports, hiking, and good food! Tell me your favourite hiking or food experience!</p>
+      <p>
+      To get in touch with me, please email me at <strong>jaysondigitalmcc@gmail.com</strong>.
+      </p>
     </section>
     {/* <section>
     <form>

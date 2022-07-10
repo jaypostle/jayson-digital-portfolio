@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="footer">
       <SocialIcons />
       <p>© Jayson Postle Digital 2022</p>
-      <nav>
+      {/* <nav>
         <ul>
           <li><a href="/privacy-policy">Privacy Policy</a></li>
         </ul>
-      </nav>
+      </nav> */}
 
     </footer>
   )
