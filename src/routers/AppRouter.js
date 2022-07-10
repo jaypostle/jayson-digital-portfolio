@@ -12,6 +12,11 @@ import PageAbout from '../Pages/PageAbout';
 import PagePortfolio from '../Pages/PagePortfolio';
 import PageSinglePortfolio from '../Pages/PageSinglePortfolio';
 
+import PageProjectMoveo from '../Pages/Projects/PageProjectMoveo';
+import PageProjectVulcan from '../Pages/Projects/PageProjectVulcan';
+import PageProjectJaysonSays from '../Pages/Projects/PageProjectJaysonSays';
+
+
 import PageTechStack from '../Pages/PageTechStack';
 import PagePrivacyPolicy from '../Pages/PagePrivacyPolicy';
 
@@ -34,12 +39,17 @@ function AppRouter() {
             <Route path='/' element={<PageHome />}/>
             <Route path='/portfolio' element={<PagePortfolio />}/>
             {/* <Route path='/portfolio/:id' element={<PageSinglePortfolio />}/> */}
+            {/*  Portfolios */}
+            <Route path='/portfolio/moveo-movie-database' element={<PageProjectMoveo />}/>
+            <Route path='/portfolio/vulcan-business-website' element={<PageProjectVulcan />}/>
+            <Route path='/portfolio/jayson-says-js-game' element={<PageProjectJaysonSays />}/>
 
-            {portfolioData && portfolioData.map((project) => 
+
+            {/* {portfolioData && portfolioData.map((project) => 
               <Route path={`/portfolio/${project.title.toLowerCase().split(" ").join("-")}`} element={<PageSinglePortfolio />}/>
 
             )
-            }
+            } */}
 
             <Route path='/about' element={<PageAbout />}/>
             <Route path='/techstack' element={<PageTechStack />}/>
