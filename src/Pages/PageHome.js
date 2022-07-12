@@ -11,6 +11,7 @@ import portfolioData from '../assets/data/portfolioData';
 import useDocumentTitle from '../utilities/documentTitle';
 import Accordion from '../components/atoms/SimpleAccordion';
 import techStackData from '../assets/data/techStack';
+import { Link } from 'react-router-dom';
 
 
 
@@ -86,7 +87,8 @@ function PageHome() {
                         project.techUsed.map((tech) => <span className='pill'>{tech}</span> )
                       }
                      </footer>
-                    <a href="/portfolio" className='secondary-cta'>View Portfolio Piece</a>
+                    {/* <a href="/portfolio" className='secondary-cta'>View Portfolio Piece</a> */}
+                    <Link to={`/portfolio/${project.title.toLowerCase().split(" ").join("-")}`}>View Project {'>'}</Link>
                   </div>
                   {/* allocate project photos */}
                   {(project.id === 1) &&
