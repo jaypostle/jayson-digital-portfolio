@@ -64,7 +64,7 @@ header {
 
         @include mq($desktop) {
             position: relative;
-            margin-top: 5rem;
+            margin-top: 5%;
         }
         
         
@@ -197,7 +197,7 @@ header {
             align-content: center;
             gap: 1rem;
             padding-left: 2.5rem;
-            margin-top: 6rem;
+            margin-top: 5%;
 
             svg {
                 color: $mid-grey-nav;

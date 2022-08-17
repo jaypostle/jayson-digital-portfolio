@@ -11,8 +11,8 @@ function PageProjectVulcan() {
 
   return (
     <>
-    <Project props={portfolioData[1]}> 
-        <img src={vulcanHero} alt={portfolioData[1].title} className='projects-hero-image' />
+    <Project props={portfolioData[2]}> 
+        <img src={vulcanHero} alt={portfolioData[2].title} className='projects-hero-image' />
     </Project>
 
     <section className='project-accordions-wrapper'>

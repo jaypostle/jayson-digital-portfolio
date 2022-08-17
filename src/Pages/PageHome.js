@@ -95,9 +95,12 @@ function PageHome() {
                   <img className="home-project-photo" src={moveoHomeProject} alt={project.title} />
                   }
                   {(project.id === 2) &&
-                  <img className="home-project-photo" src={vulcanHomeProject} alt={project.title} />
+                  <img className="home-project-photo" src={moveoHomeProject} alt={project.title} />
                   }
                   {(project.id === 3) &&
+                  <img className="home-project-photo" src={vulcanHomeProject} alt={project.title} />
+                  }
+                  {(project.id === 4) &&
                   <img className="home-project-photo" src={jsGameHomeProject} alt={project.title} />
                   }
                 </article>
