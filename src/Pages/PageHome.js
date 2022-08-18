@@ -38,7 +38,7 @@ function PageHome() {
         <article>
           <p>I love soccer, muay thai, spikeball, oil painting, nerding out over history documentaries, hiking mountains and coasts, cooking, and salsa dancing!</p>
           <p>In my free time, you’ll probably find me cooking some new dish, getting lost in a good book or podcast, or reviewing my goals for the year. </p>
-          <p>My background prior to Design and Development is in ecommerce and service digital marketing, running my own wedding DJ business.</p>
+          <p>My background prior to Design and Development is in ecommerce and service digital marketing and running my own wedding DJ business.</p>
         </article>
         <div className="accordion-wrapper-main">
           <Accordion header={'Tools & Tech Stack'} data={''}>      
@@ -70,7 +70,7 @@ function PageHome() {
       <section className="home-highlight-work">
         <article>
           <h2>Highlight Work</h2>
-          <p>I love soccer, muay thai, spikeball, oil painting, nerding out over history.</p>
+          <p>View my recent development projects.</p>
           <a href="/portfolio" className='secondary-cta'>See All Work</a>
         </article>
         <section className='highlight-work-wrapper'>
