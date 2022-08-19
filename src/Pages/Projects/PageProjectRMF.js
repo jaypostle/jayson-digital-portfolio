@@ -3,16 +3,15 @@ import {React, useState } from 'react';
 import portfolioData from '../../assets/data/portfolioData';
 import Accordion from '../../components/atoms/SimpleAccordion';
 
-import vulcanHero from '../../assets/images/Vulcan/vulcan-hero.png';
-import vulcanFooter from '../../assets/images/Vulcan/vulcan-footer.png';
-import vulcanCodeMixins from '../../assets/images/Vulcan/vulcan-code-mixins.png';
+import rmfHero from '../../assets/images/RMF/rmf-homepage-hero.png';
 
-function PageProjectVulcan() {
+
+function PageProjectRockyMountainFestival() {
 
   return (
     <>
     <Project props={portfolioData[1]}> 
-        <img src={vulcanHero} alt={portfolioData[1].title} className='projects-hero-image' />
+        <img src={rmfHero} alt={portfolioData[1].title} className='projects-hero-image' />
     </Project>
 
     <section className='project-accordions-wrapper'>
@@ -21,7 +20,7 @@ function PageProjectVulcan() {
                 <p>
                 The project requirements were to build an event website using WordPress and WooCommerce. Our group wanted to push the envelope and create an exciting weekend event that we would be excited to go to. We added additional content and created a connected user experience that allowed for families to make the weekend their own. Cards, filters, and accordions are used intentionally to support the user experience.              
                 </p>
-                <img src={vulcanFooter} alt='Vulcan Hero' className='project-functionality-image' />
+                {/* <img src={vulcanFooter} alt='Vulcan Hero' className='project-functionality-image' /> */}
 
             </Accordion>
         </article>
@@ -29,11 +28,11 @@ function PageProjectVulcan() {
             <Accordion header={'Highlight Functionality'} >
                 <h4>Isotope Filter | JS Library</h4>
                 <p>The team used the JS library Isotope to add a filter ability to Artists, Workshops, and Vendor pages. It’s intuitive and functions how a site visitor would expect it to work. The challenge was getting Isotope to run well on all three pages that were using it, given that each page has different content, with different cards and information. We initially wanted to add Isotope to the FAQ page but we had difficulty implementing it cleanly in a way that didn’t affect the original three filter pages.</p>
-                <img src={vulcanHero} alt='Vulcan Hero' className='project-functionality-image' />
+                {/* <img src={vulcanHero} alt='Vulcan Hero' className='project-functionality-image' /> */}
 
                 <h4>Custom Post Types and ACF</h4>
                 <p>We used 7 different CPTs with a range of connected ACFs to make our site content. Using CPTs alongside ACFs made our site scalable and dynamic for our fictional client. Adding new Artists, Vendors, Workshops, and more is quite simple and with our set of Training Videos we recorded, the client could feel quite comfortable updating core site details themselves.</p>
-                <img src={vulcanHero} alt='Vulcan Hero' className='project-functionality-image' />
+                {/* <img src={vulcanHero} alt='Vulcan Hero' className='project-functionality-image' /> */}
             </Accordion>
         </article>
         <article>
@@ -70,4 +69,4 @@ function PageProjectVulcan() {
     )
 }
 
-export default PageProjectVulcan
+export default PageProjectRockyMountainFestival

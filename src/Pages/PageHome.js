@@ -6,6 +6,7 @@ import jaysonphotomainhighres2 from '../assets/images/jaysonphotomainhighres2.jp
 import moveoHomeProject from '../assets/images/Moveo/moveo-home-project.png';
 import vulcanHomeProject from '../assets/images/Vulcan/vulcan-home-project.png';
 import jsGameHomeProject from '../assets/images/JaysonSays/js-home-project.png';
+import rmfHomeProject from '../assets/images/RMF/rmf-home-project-hero2.png';
 
 import portfolioData from '../assets/data/portfolioData';
 import useDocumentTitle from '../utilities/documentTitle';
@@ -95,7 +96,7 @@ function PageHome() {
                   <img className="home-project-photo" src={moveoHomeProject} alt={project.title} />
                   }
                   {(project.id === 2) &&
-                  <img className="home-project-photo" src={moveoHomeProject} alt={project.title} />
+                  <img className="home-project-photo" src={rmfHomeProject} alt={project.title} />
                   }
                   {(project.id === 3) &&
                   <img className="home-project-photo" src={vulcanHomeProject} alt={project.title} />

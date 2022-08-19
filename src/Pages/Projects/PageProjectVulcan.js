@@ -37,7 +37,7 @@ function PageProjectVulcan() {
         <article>
             <Accordion header={'Final Result'}  >
                 <a href="https://github.com/jaypostle/vulcan-company-website" className='primary-cta' target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://jaysonpostle.digital/vulcan-company-website/" className='primary-cta' target="_blank" rel="noopener noreferrer">Live Link</a>
+                {/* <a href="https://jaysonpostle.digital/vulcan-company-website/" className='primary-cta' target="_blank" rel="noopener noreferrer">Live Link</a> */}
 
             </Accordion>
         </article>
