@@ -6,6 +6,7 @@ import jaysonphotomainhighres2 from '../assets/images/jaysonphotomainhighres2.jp
 import moveoHomeProject from '../assets/images/Moveo/moveo-home-project.png';
 import vulcanHomeProject from '../assets/images/Vulcan/vulcan-home-project.png';
 import jsGameHomeProject from '../assets/images/JaysonSays/js-home-project.png';
+import rmfHomeProject from '../assets/images/RMF/rmf-home-project-hero2.png';
 
 import portfolioData from '../assets/data/portfolioData';
 import useDocumentTitle from '../utilities/documentTitle';
@@ -38,7 +39,7 @@ function PageHome() {
         <article>
           <p>I love soccer, muay thai, spikeball, oil painting, nerding out over history documentaries, hiking mountains and coasts, cooking, and salsa dancing!</p>
           <p>In my free time, you’ll probably find me cooking some new dish, getting lost in a good book or podcast, or reviewing my goals for the year. </p>
-          <p>My background prior to Design and Development is in ecommerce and service digital marketing, running my own wedding DJ business.</p>
+          <p>My background prior to Design and Development is in ecommerce and service digital marketing and running my own wedding DJ business.</p>
         </article>
         <div className="accordion-wrapper-main">
           <Accordion header={'Tools & Tech Stack'} data={''}>      
@@ -70,7 +71,7 @@ function PageHome() {
       <section className="home-highlight-work">
         <article>
           <h2>Highlight Work</h2>
-          <p>I love soccer, muay thai, spikeball, oil painting, nerding out over history.</p>
+          <p>View my recent development projects.</p>
           <a href="/portfolio" className='secondary-cta'>See All Work</a>
         </article>
         <section className='highlight-work-wrapper'>
@@ -95,9 +96,12 @@ function PageHome() {
                   <img className="home-project-photo" src={moveoHomeProject} alt={project.title} />
                   }
                   {(project.id === 2) &&
-                  <img className="home-project-photo" src={vulcanHomeProject} alt={project.title} />
+                  <img className="home-project-photo" src={rmfHomeProject} alt={project.title} />
                   }
                   {(project.id === 3) &&
+                  <img className="home-project-photo" src={vulcanHomeProject} alt={project.title} />
+                  }
+                  {(project.id === 4) &&
                   <img className="home-project-photo" src={jsGameHomeProject} alt={project.title} />
                   }
                 </article>

@@ -2,7 +2,7 @@ const funFactData = [
     {
         title: 'In a different life, what career would you have had?',
         id: 1,
-        fact: 'If my grandparents hadn’t emmigrated to Canada and stayed in Germany, while being in and amongst a true soccer culture I might’ve been a professional soccer coach! I’ve also coached 2 youth boys teams (U10 and U11) in Victoria. Both were amazing experiences and I plan to coach again in the future.',
+        fact: 'If my grandparents hadn’t emmigrated to Canada and stayed in Germany, while being in and amongst a true soccer culture I might’ve been a professional soccer coach! I’ve also coached 3 youth boys teams (U10, U11, U18) in Victoria. Both were amazing experiences and I plan to coach again in the future.',
     },
     {
         title: 'What was your first job?',
@@ -12,7 +12,7 @@ const funFactData = [
     {
         title: "What's your Meyer's Briggs?",
         id: 3,
-        fact: 'My Meyers-Briggs personality type is INTJ.',
+        fact: 'My Meyers-Briggs personality type is INTJ - "the Architect".',
     },
     {
         title: "What is your favourite music?",

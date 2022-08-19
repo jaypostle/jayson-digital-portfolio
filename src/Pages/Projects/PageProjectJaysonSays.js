@@ -13,8 +13,8 @@ function PageProjectJaysonSays() {
 
   return (
     <>
-    <Project props={portfolioData[2]}> 
-        <img src={jsGameScreen} alt={portfolioData[2].title} className='projects-hero-image' />
+    <Project props={portfolioData[3]}> 
+        <img src={jsGameScreen} alt={portfolioData[3].title} className='projects-hero-image' />
     </Project>
     
     <section className='project-accordions-wrapper'>

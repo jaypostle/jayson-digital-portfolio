@@ -23,7 +23,7 @@ function PageAbout() {
     <section>
       <h2>About Me</h2>
       <p>I was born and raised in Victoria, BC. I love soccer, football, spikeball, oil painting, indoor plants, history documentaries, hiking mountains and coasts, cooking, and salsa dancing!</p>
-      <p>I like to travel and explore new mountains and challenges. I have travelled to Germany, Poland, England, Nicaragua, and Costa Rica. I’ve hiked in the Bavarian Alps, the Juan de Fuca Trail, West Coast Trail, Mt. Albert Edward, and many other mountains or coasts in BC.</p>
+      <p>I like to travel and explore new mountains and challenges. I have travelled to Germany, Poland, England, Colombia, Nicaragua, and Costa Rica. I’ve hiked in the Bavarian Alps, the Juan de Fuca Trail, West Coast Trail, Mt. Albert Edward, and many other mountains or coasts in BC.</p>
       <p>
       I love numbers, puzzles, and analytical challenges and I also consider myself quite creative, both as a problem-solver and artistically. I love oil painting.</p>
       <p>

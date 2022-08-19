@@ -11,8 +11,8 @@ function PageProjectVulcan() {
 
   return (
     <>
-    <Project props={portfolioData[1]}> 
-        <img src={vulcanHero} alt={portfolioData[1].title} className='projects-hero-image' />
+    <Project props={portfolioData[2]}> 
+        <img src={vulcanHero} alt={portfolioData[2].title} className='projects-hero-image' />
     </Project>
 
     <section className='project-accordions-wrapper'>
@@ -37,7 +37,7 @@ function PageProjectVulcan() {
         <article>
             <Accordion header={'Final Result'}  >
                 <a href="https://github.com/jaypostle/vulcan-company-website" className='primary-cta' target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://jaysonpostle.digital/vulcan-company-website/" className='primary-cta' target="_blank" rel="noopener noreferrer">Live Link</a>
+                {/* <a href="https://jaysonpostle.digital/vulcan-company-website/" className='primary-cta' target="_blank" rel="noopener noreferrer">Live Link</a> */}
 
             </Accordion>
         </article>

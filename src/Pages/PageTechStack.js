@@ -11,7 +11,7 @@ function PageTechStack() {
         <article>
           <h1>Tools & Tech Stack</h1>
           <h3>Front-end Developer with UX Design and Digital Marketing Experience | The Digital Problem Solver</h3>
-          <p>I recently graduated from the Front-end Web Development program @ BCIT. Prior to that, I was the web/UX designer and digital marketer at Echo Echo Digital in Sidney, BC. There, I spent half my time creating sitemaps and wireframes for web and app projects and the rest of my time making and implementing marketing strategy for our list of local, ecommerce, and NGO clients. </p>
+          <p>I am a graduate of the Front-end Web Development program @ BCIT. Prior to that, I was the lead web/UX designer and digital marketer at Echo Echo Digital in Sidney, BC. There, I spent half my time creating sitemaps and wireframes for web and app projects and the rest of my time making and implementing marketing strategy for our list of local, ecommerce, and NGO clients. </p>
         <h4>As a front-end developer with a background in web/UX design and digital marketing, I develop web apps with an eye for the user's experience, interaction, and connecting with the user's needs and goals.</h4>
         </article>
     </section>

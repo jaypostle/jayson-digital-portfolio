@@ -13,6 +13,7 @@ import PagePortfolio from '../Pages/PagePortfolio';
 import PageSinglePortfolio from '../Pages/PageSinglePortfolio';
 
 import PageProjectMoveo from '../Pages/Projects/PageProjectMoveo';
+import PageProjectRMF from '../Pages/Projects/PageProjectRMF';
 import PageProjectVulcan from '../Pages/Projects/PageProjectVulcan';
 import PageProjectJaysonSays from '../Pages/Projects/PageProjectJaysonSays';
 
@@ -41,6 +42,7 @@ function AppRouter() {
             {/* <Route path='/portfolio/:id' element={<PageSinglePortfolio />}/> */}
             {/*  Portfolios */}
             <Route path='/portfolio/moveo-movie-database' element={<PageProjectMoveo />}/>
+            <Route path='/portfolio/capstone-rocky-mountain-festival' element={<PageProjectRMF />}/>
             <Route path='/portfolio/vulcan-business-website' element={<PageProjectVulcan />}/>
             <Route path='/portfolio/jayson-says-js-game' element={<PageProjectJaysonSays />}/>
 
