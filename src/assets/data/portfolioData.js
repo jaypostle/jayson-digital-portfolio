@@ -6,11 +6,19 @@ const portfolioData = [
     id: 1,
     subtitle:
       "A Full-stack React/Express.js app helping you discover the impact of food on your body. ",
-    techUsed: ["React.js", "SCSS", "Express.js", "Knex.js", "Node.js", "MySQL", "Chart.js"],
+    techUsed: [
+      "React.js",
+      "SCSS",
+      "Express.js",
+      "Knex.js",
+      "Node.js",
+      "MySQL",
+      "Chart.js",
+    ],
     year: 2022,
-    image: "../../assets/images/Moveo/moveo-hero.png",
+    image: "../../assets/images/MetaHealth/metaHealthHero.png",
     overview:
-      "An Event Conference website built with WooCommerce and a custom WordPress theme.",
+      "This work was the capstone project for the BrainStation Web Development program. It was a 2-week sprint to show off our skills from the previous 3 months of learning and projects. MetaHealth's primary purpose is to help people track their long-term health trends based on their diet. The app supports users with meal prepping and shopping based on these goals.",
   },
   //   {
   //     title: "Moveo Movie Database",
