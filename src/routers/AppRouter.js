@@ -17,6 +17,8 @@ import PageProjectRMF from "../Pages/Projects/PageProjectRMF";
 import PageProjectVulcan from "../Pages/Projects/PageProjectVulcan";
 import PageProjectJaysonSays from "../Pages/Projects/PageProjectJaysonSays";
 import PageProjectMetaHealth from "../Pages/Projects/PageProjectMetaHealth";
+import PageProjectInStock from "../Pages/Projects/PageProjectInStock";
+import PageProjectBrainFlix from "../Pages/Projects/PageProjectBrainFlix";
 
 import PageTechStack from "../Pages/PageTechStack";
 import PagePrivacyPolicy from "../Pages/PagePrivacyPolicy";
@@ -59,6 +61,14 @@ function AppRouter() {
             <Route
               path="/portfolio/metahealth"
               element={<PageProjectMetaHealth />}
+            />
+            <Route
+              path="/portfolio/instock-inventory-management-system"
+              element={<PageProjectInStock />}
+            />
+            <Route
+              path="/portfolio/brainflix"
+              element={<PageProjectBrainFlix />}
             />
 
             {/* {portfolioData && portfolioData.map((project) => 

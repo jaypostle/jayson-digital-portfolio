@@ -8,38 +8,39 @@ const portfolioData = [
       "A Full-stack React/Express.js app helping you discover the impact of food on your body. ",
     techUsed: [
       "React.js",
-      "SCSS",
       "Express.js",
       "Knex.js",
       "Node.js",
       "MySQL",
       "Chart.js",
+      "SCSS",
     ],
     year: 2022,
     image: "../../assets/images/MetaHealth/metaHealthHero.png",
     overview:
       "This work was the capstone project for the BrainStation Web Development program. It was a 2-week sprint to show off our skills from the previous 3 months of learning and projects. MetaHealth's primary purpose is to help people track their long-term health trends based on their diet. The app supports users with meal prepping and shopping based on these goals.",
   },
-  //   {
-  //     title: "Moveo Movie Database",
-  //     id: 1,
-  //     subtitle: "A movie database built in React.js using themoviedb.org API.",
-  //     techUsed: ["React.js", "SCSS", "JSX", "Redux Toolkit", "UX/UI Design"],
-  //     year: 2022,
-  //     image: "../../assets/images/Moveo/moveo-hero.png",
-  //     overview:
-  //       "An Event Conference website built with WooCommerce and a custom WordPress theme.",
-  //   },
-  //   {
-  //     title: "Moveo Movie Database",
-  //     id: 1,
-  //     subtitle: "A movie database built in React.js using themoviedb.org API.",
-  //     techUsed: ["React.js", "SCSS", "JSX", "Redux Toolkit", "UX/UI Design"],
-  //     year: 2022,
-  //     image: "../../assets/images/Moveo/moveo-hero.png",
-  //     overview:
-  //       "An Event Conference website built with WooCommerce and a custom WordPress theme.",
-  //   },
+  {
+    title: "InStock Inventory Management System",
+    id: 2,
+    subtitle:
+      "Fully responsive Full-stack React/Express.js app built in a week-long sprint with a group of 4.",
+    techUsed: ["React.js", "Express.js", "Knex.js", "Node.js", "MySQL", "SCSS"],
+    year: 2022,
+    image: "../../assets/images/instock/warehouses.png",
+    overview:
+      "In a group of 4, we were tasked with creating an inventory management system for a fictitious company. We were given a Figma design file and had to build a backend using a relational MySQL database, connected with Knex.js, and a server using Express.js. The front-end was built using React (Axios, SCSS, React Router Dom). The user can view warehouse and inventory data as well as add, edit, and delete warehouses and inventories.",
+  },
+  {
+    title: "BrainFlix",
+    id: 3,
+    subtitle: "Full-stack React/Express.js video viewing app.",
+    techUsed: ["React.js", "Express.js", "Node.js", "SCSS"],
+    year: 2022,
+    image: "../../assets/images/BrainFlix/brainflix-hero.png",
+    overview:
+      "BrainFlix is a full-stack React App built with an Express.js backend. Users can click through a set of videos, view their meta information, and view the comments for that video. Photos are used in lieu of videos, as the main exercise of the project was to manage state and connect to your backend with read routes.",
+  },
   {
     title: "Moveo Movie Database",
     id: 4,

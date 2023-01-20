@@ -1,118 +1,114 @@
 // Layout
 .projects-wrapper {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 
-    @include mq($desktopWide){
-        grid-template-columns: 1fr 1fr;
-    }
+  @include mq($desktopWide) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 // Components
 .portfolio-filter-nav {
-    display: none;
+  display: none;
 }
 
 // Project Cards
 .project-card {
-    background-color: $light-blue-grey;
-    padding: 0.75rem 1rem;
-    border-radius: 0.25rem;
-    -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: $light-blue-grey;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-    
+  @include mq($tablet) {
+    padding: 1.25rem 2rem;
+  }
 
-    @include mq($tablet){
-        padding: 1.25rem 2rem;
+  .project-content-wrapper {
+    margin-bottom: 2rem;
+  }
 
+  h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    color: rgba($textColor-midnight-blue, 70%);
+  }
+
+  a {
+    appearance: button;
+    // background-color: #E9CA79;
+    background-image: none;
+    font-family: "Barlow", "Sarabun", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 4px;
+    // box-shadow: rgb(32 32 49 / 80%) 4px 4px 0 0;
+    box-sizing: border-box;
+    color: #202031;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.5rem;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    // padding: 0.75rem 2rem;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .tech-pill-wrapper {
+    margin-top: 3rem;
+    // display: flex;
+    // justify-content: space-between;
+
+    @include mq($tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-between;
     }
 
-    .project-content-wrapper {
-        margin-bottom: 2rem;
-    }
+    // span {
+    //     padding-right: 0.5rem;
+    //     padding-bottom: 0.5rem;
+    //     font-weight: 500;
+    //     font-size: 1rem;
+
+    // }
+  }
+
+  &:hover {
+    background-color: $textColor-midnight-blue;
+    // color: $light-blue-grey;
 
     h3 {
-        margin-bottom: 0.25rem;
+      color: $gold-CTA;
     }
-
     p {
-        color: rgba($textColor-midnight-blue, 70%);
+      color: rgba($light-blue-grey, 70%);
     }
 
     a {
-        appearance: button;
-        // background-color: #E9CA79;
-        background-image: none;
-        font-family: "Barlow", "Sarabun", sans-serif;
-        font-size: 1.25rem;
-        font-weight: 500;
-        border-radius: 4px;
-        // box-shadow: rgb(32 32 49 / 80%) 4px 4px 0 0;
-        box-sizing: border-box;
-        color: #202031;
-        cursor: pointer;
-        display: inline-block;
-        line-height: 1.5rem;
-        margin: 0 5px 10px 0;
-        overflow: visible;
-        // padding: 0.75rem 2rem;
-        text-align: center;
-        text-transform: none;
-        touch-action: manipulation;
-        user-select: none;
-        -webkit-user-select: none;
-        vertical-align: middle;
-        white-space: nowrap;
+      background-color: $light-blue-grey;
+      box-shadow: rgb(32 32 49 / 80%) 4px 4px 0 0;
+      padding: 0.75rem 2rem;
+
+      // span.pill {
+      //     // background-color: $light-grey-background!important;
+      //     // color: rgba($textColor-midnight-blue, 70%);
+
+      // }
+
+      &:hover {
+        background-color: $gold-CTA;
+      }
     }
-
-    .tech-pill-wrapper {
-        margin-top: 3rem;
-        // display: flex;
-        // justify-content: space-between;
-
-        @include mq($tablet){
-            display: flex;
-            // justify-content: space-between;
-        }
-
-        // span {
-        //     padding-right: 0.5rem;
-        //     padding-bottom: 0.5rem;
-        //     font-weight: 500;
-        //     font-size: 1rem;
-
-
-        // }
-    }
-
-    &:hover {
-        background-color: $textColor-midnight-blue;
-        // color: $light-blue-grey;
-
-        h3 {
-            color: $gold-CTA;
-        }
-        p {
-            color: rgba($light-blue-grey, 70%);
-        }
-
-        a {
-            background-color: $light-blue-grey;
-            box-shadow: rgb(32 32 49 / 80%) 4px 4px 0 0;
-            padding: 0.75rem 2rem;
-
-        // span.pill {
-        //     // background-color: $light-grey-background!important;
-        //     // color: rgba($textColor-midnight-blue, 70%);
-    
-        // }
-
-        &:hover {
-            background-color: $gold-CTA;
-        }
-        }
-    }
-    
+  }
 }
 
 // Designs
