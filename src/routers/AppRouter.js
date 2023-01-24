@@ -25,6 +25,8 @@ import PagePrivacyPolicy from "../Pages/PagePrivacyPolicy";
 
 import PageTestimonials from "../Pages/PageTestimonials";
 
+import ScrollToTop from "../utilities/scrollToTop";
+
 function AppRouter() {
   useEffect(() => {
     document.title = "Jayson | Portfolio";
@@ -32,6 +34,7 @@ function AppRouter() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="wrapper">
         <div className="App-header">
           <Header />
