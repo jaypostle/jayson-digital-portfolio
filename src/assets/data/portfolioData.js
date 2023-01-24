@@ -49,7 +49,7 @@ const portfolioData = [
     year: 2022,
     image: "../../assets/images/Moveo/moveo-hero.png",
     overview:
-      "An Event Conference website built with WooCommerce and a custom WordPress theme.",
+      "A movie database built in React.js using themoviedb.org API. Features an add-to-favourites functionality that persists in the browser using local storage. (Personally) designed using Figma using a design system and a component architecture.",
   },
   {
     title: "Capstone Rocky Mountain Festival",
