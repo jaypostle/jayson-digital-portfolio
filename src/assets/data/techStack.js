@@ -1,81 +1,94 @@
 const techStackData = {
-    engineering:
-    [{
-        skill: 'HTML/CSS'
+  engineering: [
+    {
+      skill: "React.js",
     },
     {
-        skill: 'jQuery'
+      skill: "Node.js",
     },
     {
-        skill: 'React.js'
+      skill: "Express.js",
     },
     {
-        skill: 'PHP'
+      skill: "MySQL w/ Knex.js",
     },
     {
-        skill: 'Git'
+      skill: "HTML/CSS",
     },
     {
-        skill: 'Sass'
+      skill: "jQuery",
     },
     {
-        skill: 'WordPress'
-    },
-    ],
-    design: 
-    [{
-        skill: 'Figma'
+      skill: "PHP",
     },
     {
-        skill: 'Sketch'
+      skill: "Git",
     },
     {
-        skill: 'Adobe PS/AI'
+      skill: "SASS/SCSS",
     },
     {
-        skill: 'Invision'
+      skill: "WordPress",
     },
     {
-        skill: 'UX/UI'
+      skill: "Webflow",
     },
     {
-        skill: 'User Research'
+      skill: "SquareSpace",
+    },
+  ],
+  design: [
+    {
+      skill: "Figma",
     },
     {
-        skill: 'Wireframing'
+      skill: "Sketch",
     },
     {
-        skill: 'Usertesting'
+      skill: "Adobe PS/AI",
     },
     {
-        skill: 'Usability Testing'
-    },
-    ],
-    marketing: 
-    [{
-        skill: 'Google Ads (Search, Display, Youtube, Shopping)'
+      skill: "Invision",
     },
     {
-        skill: 'Facebook & Instagram Advertising'
+      skill: "UX/UI",
     },
     {
-        skill: 'Snapchat'
+      skill: "User Research",
     },
     {
-        skill: 'Pinterest'
+      skill: "Wireframing",
     },
     {
-        skill: 'Email Marketing'
+      skill: "Usertesting",
     },
     {
-        skill: 'Marketing Research'
+      skill: "Usability Testing",
+    },
+  ],
+  marketing: [
+    {
+      skill: "Google Ads (Search, Display, Youtube, Shopping)",
     },
     {
-        skill: 'Sales Funnel Strategy'
+      skill: "Facebook & Instagram Advertising",
     },
-    ],
-}
-    
-
+    {
+      skill: "Snapchat",
+    },
+    {
+      skill: "Pinterest",
+    },
+    {
+      skill: "Email Marketing",
+    },
+    {
+      skill: "Marketing Research",
+    },
+    {
+      skill: "Sales Funnel Strategy",
+    },
+  ],
+};
 
 export default techStackData;
