@@ -4,9 +4,6 @@
 
 import jaysonphotomainhighres2 from "../assets/images/jaysonphotomainhighres2.jpeg";
 import moveoHomeProject from "../assets/images/Moveo/moveo-home-project.png";
-import vulcanHomeProject from "../assets/images/Vulcan/vulcan-home-project.png";
-import jsGameHomeProject from "../assets/images/JaysonSays/js-home-project.png";
-import rmfHomeProject from "../assets/images/RMF/rmf-home-project-hero2.png";
 import MetaHealthProject from "../assets/images/MetaHealth/chart-clicking.gif";
 import InStockProject from "../assets/images/InStock/warehouses.png";
 import BrainFlixProject from "../assets/images/BrainFlix/brainflix-hero.png";
@@ -37,13 +34,18 @@ function PageHome() {
             and front-end applications that are detailed and exceptionally
             usable.
           </p>
+          <p>
+            Additionally, I have 3 years of agency experience as a web and UX
+            designer creating wireframes and websites in WordPress and
+            Squarespace.
+          </p>
           <a href="/portfolio" className="primary-cta">
             View My Work
           </a>
         </div>
         <img
           src={jaysonphotomainhighres2}
-          alt="Jayson Photo"
+          alt="Jayson"
           className="home-jayson-photo"
         />
       </section>
@@ -70,7 +72,7 @@ function PageHome() {
         <div className="accordion-wrapper-main">
           <Accordion header={"Tools & Tech Stack"} data={""}>
             <h4>Front-End Developer with UX and Marketing Experience </h4>
-            <p>Websites and web apps built in React and Wordpress. </p>
+            <p>Websites and web apps built in React. </p>
 
             {techStackData &&
               techStackData.engineering.map((skill) => (
@@ -85,7 +87,7 @@ function PageHome() {
                 <span className="pill">{skill.skill}</span>
               ))}
           </Accordion>
-          <Accordion header={"Passion Projects"} data={""}>
+          {/* <Accordion header={"Passion Projects"} data={""}>
             <h4>UX Designer Bookclub</h4>
             <p>
               I recently started a bookclub inside the{" "}
@@ -118,7 +120,7 @@ function PageHome() {
               </a>{" "}
               and shared it with my local community.
             </p>
-          </Accordion>
+          </Accordion> */}
         </div>
         <a href="/about" className="secondary-cta">
           Learn More About Me

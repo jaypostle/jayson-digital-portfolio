@@ -1,7 +1,16 @@
 const techStackData = {
   engineering: [
     {
+      skill: "Next.js",
+    },
+    {
       skill: "React.js",
+    },
+    {
+      skill: "MongoDB",
+    },
+    {
+      skill: "Prisma",
     },
     {
       skill: "Node.js",
@@ -11,6 +20,9 @@ const techStackData = {
     },
     {
       skill: "MySQL w/ Knex.js",
+    },
+    {
+      skill: "Chart.js/Nivo Chart Library",
     },
     {
       skill: "HTML/CSS",
